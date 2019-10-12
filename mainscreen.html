@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Subsist - Web edition</title>
+        <link rel = "stylesheet" href = "https://cdn.rawgit.com/qubix1871/personalProjects/master/mainscreen_styles.css"
+         type = "text/css">
+        <script src = "https://cdn.rawgit.com/qubix1871/personalProjects/master/script.js"
+        type = "text/javascript"></script>
+    </head>
+    <body>
+        <div id = "winLoss">
+            <p id = "status"></p>
+        </div>
+        <!--<div id = "error">
+            <p id = "errMsg"></p>
+        </div> -->
+        <div id = "game">            
+            <div class = "gamearea">
+                <div class = "opponentBoard">
+                    <p id = "context">Opponent Progress</p> <br> <br>
+                    <center><ul id = "opp_score">
+                        <li><p id = "opp_red">4</p></li>
+                        <li><p id = "opp_green">4</p></li>
+                        <li><p id = "opp_blue">4</p></li>
+                        <li><p id = "opp_yellow">4</p></li>
+                        <li><p id = "opp_white">4</p></li>
+                        <li><p id = "opp_black">4</p></li>
+                    </ul></center>
+                </div>
+                <div class = "cards">
+                    <div class = "reds">
+                        <p class = "num" id = "numRed"></p>
+                    </div>
+                    <div class = "greens">
+                        <p class = "num" id = "numGreen"></p>
+                    </div>
+                    <div class = "blues">
+                        <p class = "num" id = "numBlue"></p>
+                    </div>
+                    <div class = "yellows">
+                        <p class = "num" id = "numYellow"></p>
+                    </div>
+                    <div class = "whites">
+                        <p class = "num" id = "numWhite"></p>
+                    </div>
+                    <div class = "blacks">
+                        <p class = "num" id = "numBlack"></p>
+                    </div>                    
+                </div>
+                <center><a href = "#" class = "num" id = "button" onclick = "rand()">Roll dice</a></center>
+                <center><a href = "#" class = "cardchoice" id = "coloredName" onclick = "coloredChoice()">Color</a></center>
+                <center><a href = "#" class = "cardchoice" id = "whitecard" onclick = "whitecard()">White</a></center>
+                <center><a href = "#" class = "cardchoice" id = "blackcard" onclick = "blackcard()">Black</a></center>
+            </div>
+            <div class = "footer">
+                <p id = "title">
+                    SUBSIST - WEB EDITION
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
