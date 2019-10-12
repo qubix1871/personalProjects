@@ -256,11 +256,22 @@ function oppScoreDisplay(){
 
 function opponentTurn(){
     var oppChoices = Math.floor((Math.random() * 4) + 1);
-
+    
     if(oppChoices == 1){
         var cardChoices = Math.floor((Math.random() * 2) + 1);
         if(cardChoices == 1){
-            oppRed--;
+            if(oppRed <= 0){
+                var oppSecChoices = Math.floor((Math.random() * 2) + 1);
+                if(oppSecChoices == 1){
+                    oppWhite -= 2;
+                }
+                else if(oppSecChoices == 2){
+                    oppBlack--;
+                }
+            }
+            else{
+                oppRed--;
+            }
         }
         else if(cardChoices == 2){
             oppWhite -= 2;
@@ -273,7 +284,18 @@ function opponentTurn(){
     else if(oppChoices == 2){
         var cardChoices = Math.floor((Math.random() * 2) + 1);
         if(cardChoices == 1){
-            oppGreen--;
+            if(oppGreen <= 0){
+                var oppSecChoices = Math.floor((Math.random() * 2) + 1);
+                if(oppSecChoices == 1){
+                    oppWhite -= 2;
+                }
+                else if(oppSecChoices == 2){
+                    oppBlack--;
+                }
+            }
+            else{
+                oppGreen--;
+            }
         }
         else if(cardChoices == 2){
             oppWhite -= 2;
@@ -286,7 +308,18 @@ function opponentTurn(){
     else if(oppChoices == 3){
         var cardChoices = Math.floor((Math.random() * 2) + 1);
         if(cardChoices == 1){
-            oppBlue--;
+            if(oppBlue <= 0){
+                var oppSecChoices = Math.floor((Math.random() * 2) + 1);
+                if(oppSecChoices == 1){
+                    oppWhite -= 2;
+                }
+                else if(oppSecChoices == 2){
+                    oppBlack--;
+                }
+            }
+            else{
+                oppBlue--;
+            }
         }
         else if(cardChoices == 2){
             oppWhite -= 2;
@@ -299,7 +332,18 @@ function opponentTurn(){
     else if(oppChoices == 4){
         var cardChoices = Math.floor((Math.random() * 2) + 1);
         if(cardChoices == 1){
-            oppYellow--;
+            if(oppYellow <= 0){
+                var oppSecChoices = Math.floor((Math.random() * 2) + 1);
+                if(oppSecChoices == 1){
+                    oppWhite -= 2;
+                }
+                else if(oppSecChoices == 2){
+                    oppBlack--;
+                }
+            }
+            else{
+                oppYellow--;
+            }
         }
         else if(cardChoices == 2){
             oppWhite -= 2;
